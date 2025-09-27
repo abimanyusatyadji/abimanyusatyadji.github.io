@@ -9,9 +9,9 @@ export default function Project() {
         </h2>
         <div className="grid md:grid-cols-3 gap-6">
           <ProjectCard
-            title="Project 1"
-            description="Deskripsi singkat project pertama."
-            link="https://github.com/"
+            title="Manajemen Karyawan"
+            description="Aplikasi manajemen karyawan berbasis web dengan fitur autentikasi dan pengelolaan data karyawan, dibuat menggunakan Laravel Breeze dan Tailwind CSS."
+            link="https://abimanyus123.rf.gd/"
           />
           <ProjectCard
             title="Project 2"

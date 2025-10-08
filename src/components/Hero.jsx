@@ -38,7 +38,7 @@ export default function Hero() {
       </motion.p>
 
       {/* Tombol */}
-      <motion.a
+      {/* <motion.a
         href="#projects"
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
@@ -46,7 +46,7 @@ export default function Hero() {
         className="mt-6 px-6 py-3 bg-[#B94B64] text-white rounded-lg shadow hover:bg-[#ca3155]"
       >
         Lihat Project
-      </motion.a>
+      </motion.a> */}
     </section>
   );
 }

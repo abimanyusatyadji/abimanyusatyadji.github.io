@@ -1,9 +1,6 @@
 import { motion } from "framer-motion";
 
-export default function ProjectCard({ title, description, link }) {
-  // Generate thumbnail pakai Thum.io (gratis & tanpa API key)
-  const thumbnail = `https://image.thum.io/get/${link}`;
-
+export default function ProjectCard({ title, description, link, image }) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 50 }}
@@ -11,14 +8,22 @@ export default function ProjectCard({ title, description, link }) {
       viewport={{ once: true }}
       transition={{ duration: 0.6 }}
       whileHover={{ scale: 1.05 }}
-      className="bg-white rounded-xl shadow overflow-hidden cursor-pointer"
+      className="bg-white rounded-xl shadow p-4 cursor-pointer"
     >
-      {/* Thumbnail otomatis */}
-      <img src={thumbnail} alt={title} className="w-full h-40 object-cover" />
+      {/* Thumbnail manual dari folder public */}
+      <img
+        src={image}
+        alt={title}
+        className="w-full h-40 object-cover rounded-lg"
+      />
 
       <div className="p-6">
         <h3 className="text-xl font-semibold text-gray-800">{title}</h3>
-        <p className="mt-2 text-gray-600">{description}</p>
+        <p
+          className="mt-2 text-gray-600"
+          dangerouslySetInnerHTML={{ __html: description }}
+        />
+
         <a
           href={link}
           target="_blank"

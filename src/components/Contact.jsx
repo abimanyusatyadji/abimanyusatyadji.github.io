@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import emailjs from "emailjs-com";
 import { useRef, useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
+import { FaWhatsapp, FaEnvelope } from "react-icons/fa";
 
 export default function Contact() {
   const form = useRef();
@@ -102,25 +103,27 @@ export default function Contact() {
             required
           ></textarea>
 
-          {/* dua tombol */}
+          {/* dua tombol dengan ikon */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button
               type="submit"
               disabled={loading}
-              className={`flex-1 px-6 py-3 rounded-lg text-white transition ${
+              className={`flex items-center justify-center gap-2 flex-1 px-6 py-3 rounded-lg text-white transition ${
                 loading
                   ? "bg-gray-400 cursor-not-allowed"
                   : "bg-[#B94B64] hover:bg-[#ca3155] cursor-pointer"
               }`}
             >
+              <FaEnvelope size={18} />
               {loading ? "Mengirim..." : "Kirim via Email"}
             </button>
 
             <button
               type="button"
               onClick={sendWhatsApp}
-              className="flex-1 px-6 py-3 rounded-lg text-white bg-green-600 hover:bg-green-700 transition cursor-pointer"
+              className="flex items-center justify-center gap-2 flex-1 px-6 py-3 rounded-lg text-white bg-green-600 hover:bg-green-700 transition cursor-pointer"
             >
+              <FaWhatsapp size={20} />
               Kirim via WhatsApp
             </button>
           </div>

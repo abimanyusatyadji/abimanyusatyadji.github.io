@@ -50,13 +50,11 @@ export default function About() {
         >
           Saya <strong>Abimanyu Satyadji</strong>, lulusan{" "}
           <strong>Telkom University — S1 Teknologi Informasi</strong> yang
-          berfokus sebagai <strong>Frontend Developer</strong>. Saya menguasai{" "}
+          berfokus sebagai <strong>Web Developer</strong>. Saya menguasai{" "}
           <strong>
             HTML, CSS, JavaScript, React JS, Bootstrap, dan Tailwind
           </strong>
-          , serta memiliki dasar dalam <strong>Laravel</strong> untuk kebutuhan
-          full-stack ringan. Saya menyukai tampilan yang <em>clean</em>,
-          interaktif, dan responsif.
+          , serta <strong>Laravel</strong> untuk kebutuhan full-stack.
         </motion.p>
 
         {/* Skill Cards */}

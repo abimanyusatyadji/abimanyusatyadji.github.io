@@ -34,7 +34,7 @@ export default function Hero() {
         transition={{ duration: 0.8, delay: 0.3 }}
         className="mt-4 text-xl text-gray-600"
       >
-        Frontend Web Developer
+        Web Developer
       </motion.p>
 
       {/* Tombol */}
